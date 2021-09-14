@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Anton&family=Bebas+Neue&family=Besley:ital@1&family=Fjalla+One&family=Great+Vibes&family=IBM+Plex+Serif:wght@300&family=Staatliches&display=swap');
+body {
+    margin: 0;
+    flex-direction: column;
+    display: flex;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+#cabecalho-principal {
+    display: flex;
+}
+
+.videodança {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+
+ul li {
+    font-family: 'Staatliches', cursive;
+}
+
+a {
+    color: #960000;
+    text-decoration: none;
+    transition-property: font-size;
+    transition-duration: 1s;
+    text-decoration: none;
+}
+
+a:hover {
+    font-size: 50px;
+    color: black;
+    text-decoration: none;
+}
+
+a:active {
+    color: white;
+}
+
+.icones {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 0;
+}
+
+footer {
+    list-style-type: none;
+    width: 100%;
+    word-break: break-all;
+}
+
+.icones li {
+    list-style: none;
+}
+
+.conteudo ul {
+    list-style: none;
+    font-size: 35px;
+}
+
+#direitos {
+    justify-content: center;
+    text-align: center;
+}
+
+#direitos p {
+    display: inline-block;
+    padding-bottom: 0;
+}
+
+div.conteudo .links_rodape {
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.links_rodape li {
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#icones {
+    width: 80px;
+    height: 80px;
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width:400px) {
+    footer .links_rodape {
+        padding-left: 0;
+    }
+    .container ul {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media screen and (max-width:360px) {
+    footer ul {
+        padding-left: 3px;
+    }
+}
+
+.container ul,
+.container,
+.container ul li {
+    flex: 1;
+}
